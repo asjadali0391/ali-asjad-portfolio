@@ -132,7 +132,7 @@ a {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent-dark);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -148,15 +148,15 @@ p {
 h1 {
   max-width: 780px;
   margin-bottom: 22px;
-  font-size: clamp(2.7rem, 5.8vw, 5rem);
-  line-height: 0.98;
+  font-size: clamp(2.35rem, 4.6vw, 4.05rem);
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 16px;
-  font-size: clamp(1.85rem, 3.2vw, 2.7rem);
-  line-height: 1.08;
+  font-size: clamp(1.75rem, 2.6vw, 2.35rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 
@@ -766,7 +766,7 @@ h3 {
   }
 
   h1 {
-    font-size: 2.65rem;
+    font-size: 2.25rem;
   }
 
   .metric-grid {
