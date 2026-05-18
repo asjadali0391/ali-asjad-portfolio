@@ -1,8 +1,8 @@
 :root {
-  --bg: #f6f4ef;
+  --bg: #f7f8f6;
   --ink: #17201b;
   --muted: #5e6964;
-  --line: #d9d4c8;
+  --line: #dfe3dd;
   --panel: #ffffff;
   --accent: #0f6f68;
   --accent-dark: #0a4d49;
@@ -144,14 +144,14 @@ h1 {
 
 h2 {
   margin-bottom: 16px;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1;
+  font-size: clamp(1.85rem, 3.2vw, 2.7rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 h3 {
   margin-bottom: 10px;
-  font-size: 1.08rem;
+  font-size: 1.12rem;
   line-height: 1.25;
 }
 
@@ -355,7 +355,7 @@ h3 {
 .timeline article,
 .project-card,
 .skills-grid div,
-.education-band {
+.education-grid article {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -388,7 +388,7 @@ h3 {
 .timeline p,
 .project-card p,
 .skills-grid p,
-.education-band p,
+.education-grid p,
 .profile-link-grid small {
   margin-bottom: 0;
   color: var(--muted);
@@ -415,7 +415,7 @@ h3 {
 
 .dashboard-section {
   padding: 0 0 78px;
-  background: #e9eee9;
+  background: #edf2ef;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -423,7 +423,7 @@ h3 {
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 22px;
 }
 
 .dashboard-card {
@@ -438,13 +438,13 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: #101613;
+  object-fit: contain;
+  background: #f5f6f3;
   border-bottom: 1px solid var(--line);
 }
 
 .dashboard-content {
-  padding: 18px;
+  padding: 22px;
 }
 
 .dashboard-content span {
@@ -509,20 +509,19 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
   padding-bottom: 78px;
 }
 
 .project-card {
   display: flex;
-  min-height: 420px;
+  min-height: 0;
   flex-direction: column;
-  padding: 22px;
+  padding: 24px;
 }
 
 .project-card.featured {
-  grid-column: span 2;
   background: #11221d;
   color: #fff;
 }
@@ -568,12 +567,46 @@ h3 {
   padding: 20px;
 }
 
-.education-band {
+.education-section {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
-  gap: 28px;
-  padding: 28px;
-  margin-bottom: 24px;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: clamp(28px, 5vw, 70px);
+  padding: 70px 0;
+  border-top: 1px solid var(--line);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.education-grid article {
+  padding: 22px;
+}
+
+.education-grid span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.education-grid h3 {
+  min-height: 56px;
+  margin-bottom: 10px;
+}
+
+.education-grid p + p {
+  margin-top: 8px;
+}
+
+.education-grid strong {
+  display: block;
+  margin-top: 18px;
+  color: var(--accent-dark);
+  font-size: 0.95rem;
 }
 
 .profiles-section {
@@ -660,7 +693,7 @@ h3 {
   .hero,
   .about-section,
   .split-section,
-  .education-band,
+  .education-section,
   .profiles-section,
   .contact-section {
     grid-template-columns: 1fr;
@@ -673,12 +706,9 @@ h3 {
   .project-grid,
   .dashboard-grid,
   .skills-grid,
-  .profile-link-grid {
+  .profile-link-grid,
+  .education-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-card.featured {
-    grid-column: span 1;
   }
 
   .section-heading,
