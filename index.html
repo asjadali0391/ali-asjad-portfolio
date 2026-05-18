@@ -25,6 +25,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#work">Experience</a>
+        <a href="#dashboards">Dashboards</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#profiles">Profiles</a>
@@ -192,8 +193,9 @@
               <p class="eyebrow">Tableau Public</p>
               <h2>Interactive dashboards and visual analytics.</h2>
               <p class="section-intro">
-                These dashboards show my ability to turn raw datasets into clean analytical views,
-                stakeholder-ready KPI layouts, maps, trend analysis, and exploratory visual stories.
+                Each dashboard is structured around a business question, a clean analytical layout,
+                and visual patterns that help recruiters and stakeholders quickly understand the
+                problem, the analysis, and the decision value.
               </p>
             </div>
             <a class="text-link" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
@@ -209,9 +211,20 @@
                 <span>Customer Experience Analytics</span>
                 <h3>Customers' Complaints Dashboard</h3>
                 <p>
-                  Complaint volume, timely response, issue categories, state-level density, channel mix,
-                  and trend monitoring in one operational dashboard.
+                  A service-operations dashboard for monitoring complaint volume, timely responses,
+                  in-progress cases, issue categories, geographic complaint density, response outcomes,
+                  and submission channels. The layout is designed for managers who need to identify
+                  where complaint risk is rising and which issues require attention.
                 </p>
+                <ul class="insight-list">
+                  <li>Built KPI cards for volume, response timeliness, and active complaints.</li>
+                  <li>Used map and trend views to highlight location and time-based patterns.</li>
+                  <li>Included filters for company, state, and reporting period exploration.</li>
+                </ul>
+                <a class="card-action" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
+                  View dashboard
+                  <i data-lucide="external-link"></i>
+                </a>
               </div>
             </article>
 
@@ -221,9 +234,20 @@
                 <span>Transportation Analytics</span>
                 <h3>Traffic Volume in Minnesota</h3>
                 <p>
-                  Month, weather, holiday, and hourly heatmap analysis for understanding traffic patterns
-                  from 2012 to 2018.
+                  A transportation dashboard analyzing Minnesota traffic volume from 2012 to 2018.
+                  It combines monthly trends, weather-based traffic differences, national holiday
+                  effects, and an hourly heatmap to make traffic seasonality and peak movement patterns
+                  easier to inspect.
                 </p>
+                <ul class="insight-list">
+                  <li>Compared monthly traffic levels to reveal seasonal demand patterns.</li>
+                  <li>Segmented traffic by weather type and holiday periods.</li>
+                  <li>Used a day-hour heatmap to show high-volume commuting windows.</li>
+                </ul>
+                <a class="card-action" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
+                  View dashboard
+                  <i data-lucide="external-link"></i>
+                </a>
               </div>
             </article>
 
@@ -233,8 +257,19 @@
                 <span>Geospatial Analytics</span>
                 <h3>NYC WiFi Locations</h3>
                 <p>
-                  Map-based analysis comparing free and fee-based WiFi locations across New York City.
+                  A geospatial Tableau visual comparing free and fee-based public WiFi locations across
+                  New York City. The map makes location density and accessibility differences visible
+                  at a neighborhood level.
                 </p>
+                <ul class="insight-list">
+                  <li>Mapped public WiFi access points using Open Data NYC.</li>
+                  <li>Color-coded free versus fee-based locations for quick comparison.</li>
+                  <li>Focused the visual design on distribution, coverage, and accessibility.</li>
+                </ul>
+                <a class="card-action" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
+                  View dashboard
+                  <i data-lucide="external-link"></i>
+                </a>
               </div>
             </article>
 
@@ -244,9 +279,19 @@
                 <span>Media Analytics</span>
                 <h3>Netflix Content Dashboard</h3>
                 <p>
-                  Content mix, country distribution, genre rankings, ratings, and release-year trends
-                  for movies and TV shows.
+                  A content analytics dashboard summarizing Netflix titles by country, genre, rating,
+                  type, release year, and movie-versus-TV distribution. It is designed to quickly show
+                  content mix, catalog growth, and genre concentration.
                 </p>
+                <ul class="insight-list">
+                  <li>Combined geographic, categorical, and time-series views in one dashboard.</li>
+                  <li>Highlighted top genres and rating distribution for content segmentation.</li>
+                  <li>Separated movies and TV shows to compare catalog composition.</li>
+                </ul>
+                <a class="card-action" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
+                  View dashboard
+                  <i data-lucide="external-link"></i>
+                </a>
               </div>
             </article>
           </div>
@@ -259,8 +304,8 @@
             <p class="eyebrow">Selected Work</p>
             <h2>Portfolio projects for data science and analytics roles.</h2>
           </div>
-          <a class="text-link" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
-            Tableau gallery
+          <a class="text-link" href="https://github.com/asjadali0391" target="_blank" rel="noreferrer">
+            GitHub profile
             <i data-lucide="external-link"></i>
           </a>
         </div>
@@ -279,12 +324,21 @@
               fuel type, and kilometers driven. The model uses real-world PakWheels data and an XGBoost
               regression workflow covering preprocessing, training, evaluation, and web deployment.
             </p>
+            <ul class="project-details">
+              <li><strong>Problem:</strong> Estimate used-car resale prices from vehicle attributes.</li>
+              <li><strong>Approach:</strong> Cleaned vehicle data, engineered model inputs, trained an XGBoost regression model, and wrapped predictions in a Flask web app.</li>
+              <li><strong>Value:</strong> Demonstrates end-to-end ML workflow from notebook analysis to deployable decision tool.</li>
+            </ul>
             <ul class="tag-list">
               <li>Python</li>
               <li>Flask</li>
               <li>XGBoost</li>
               <li>Regression</li>
             </ul>
+            <a class="card-action" href="https://github.com/asjadali0391/Auto-Price-Predictor" target="_blank" rel="noreferrer">
+              View GitHub repo
+              <i data-lucide="github"></i>
+            </a>
           </article>
 
           <article class="project-card">
@@ -300,11 +354,20 @@
               diagnosis. Compared KNN, Decision Tree, Random Forest, and Extra Trees models, identifying
               key predictors such as mood swings, sadness, euphoria, optimism, and behavioral indicators.
             </p>
+            <ul class="project-details">
+              <li><strong>Problem:</strong> Explore whether survey indicators can support mood-disorder classification.</li>
+              <li><strong>Approach:</strong> Cleaned survey data, engineered features, compared multiple classifiers, and reviewed model interpretability.</li>
+              <li><strong>Value:</strong> Shows supervised learning, model comparison, and responsible framing for healthcare-adjacent analytics.</li>
+            </ul>
             <ul class="tag-list">
               <li>Python</li>
               <li>Random Forest</li>
               <li>Feature Engineering</li>
             </ul>
+            <a class="card-action" href="https://github.com/asjadali0391/Mood-Disorder-Clinic" target="_blank" rel="noreferrer">
+              View GitHub repo
+              <i data-lucide="github"></i>
+            </a>
           </article>
 
           <article class="project-card">
@@ -320,11 +383,20 @@
               underperforming items, peak sales periods, weekday/weekend patterns, and actionable
               strategies for menu optimization and targeted marketing.
             </p>
+            <ul class="project-details">
+              <li><strong>Problem:</strong> Find sales patterns and improvement opportunities in restaurant transaction data.</li>
+              <li><strong>Approach:</strong> Used R for cleaning, EDA, visualization, and final HTML reporting.</li>
+              <li><strong>Value:</strong> Connects data wrangling to recommendations for menu focus and low-traffic marketing.</li>
+            </ul>
             <ul class="tag-list">
               <li>R</li>
               <li>EDA</li>
               <li>Customer Behavior</li>
             </ul>
+            <a class="card-action" href="https://github.com/asjadali0391/Regork-Project-with-R" target="_blank" rel="noreferrer">
+              View GitHub repo
+              <i data-lucide="github"></i>
+            </a>
           </article>
 
           <article class="project-card">
@@ -340,11 +412,20 @@
               The repository includes CSV data, modeling code, and a Shiny app for exploring predicted
               prospect outcomes.
             </p>
+            <ul class="project-details">
+              <li><strong>Problem:</strong> Project career trajectories for NFL defensive tackle prospects.</li>
+              <li><strong>Approach:</strong> Prepared prospect datasets, built modeling workflows in R, and surfaced results through a Shiny app.</li>
+              <li><strong>Value:</strong> Demonstrates predictive modeling, applied sports analytics, and interactive app delivery.</li>
+            </ul>
             <ul class="tag-list">
               <li>R</li>
               <li>Shiny</li>
               <li>Predictive Modeling</li>
             </ul>
+            <a class="card-action" href="https://github.com/asjadali0391/ML-NFL-Prospect-Repository" target="_blank" rel="noreferrer">
+              View GitHub repo
+              <i data-lucide="github"></i>
+            </a>
           </article>
 
           <article class="project-card">
@@ -360,30 +441,21 @@
               Used RFM segmentation and market basket analysis to identify customer profiles and propose
               bundled care-package offers for targeted demographics.
             </p>
+            <ul class="project-details">
+              <li><strong>Problem:</strong> Identify customer segments and basket patterns that can improve loyalty strategy.</li>
+              <li><strong>Approach:</strong> Used SQL, Python, RFM analysis, market basket analysis, and Tableau storytelling.</li>
+              <li><strong>Value:</strong> Shows ability to work with large transaction datasets and translate analytics into customer strategy.</li>
+            </ul>
             <ul class="tag-list">
               <li>SQLite</li>
               <li>PostgreSQL</li>
               <li>Python</li>
               <li>Tableau</li>
             </ul>
-          </article>
-
-          <article class="project-card tableau-card">
-            <div class="project-topline">
-              <span>Visual Analytics - Tableau Public</span>
-              <a href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer" aria-label="View Tableau Public profile">
-                <i data-lucide="external-link"></i>
-              </a>
-            </div>
-            <h3>Interactive Tableau Dashboards</h3>
-            <p>
-              Public dashboard portfolio showcasing data storytelling, KPI design, exploratory analysis,
-              and stakeholder-ready visualizations. Built to demonstrate how analysis becomes a clear,
-              interactive decision surface.
-            </p>
-            <div class="viz-bars" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
+            <a class="card-action" href="https://public.tableau.com/app/profile/muhammad.ali.asjad/vizzes" target="_blank" rel="noreferrer">
+              View Tableau profile
+              <i data-lucide="bar-chart-3"></i>
+            </a>
           </article>
         </div>
       </section>

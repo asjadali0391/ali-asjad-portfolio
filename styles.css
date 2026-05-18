@@ -98,7 +98,8 @@ a {
 .nav-resume svg,
 .button svg,
 .text-link svg,
-.project-topline svg {
+.project-topline svg,
+.card-action svg {
   width: 18px;
   height: 18px;
 }
@@ -421,7 +422,7 @@ h3 {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -431,10 +432,6 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 14px 44px rgba(33, 42, 38, 0.08);
-}
-
-.dashboard-card-large {
-  grid-column: span 2;
 }
 
 .dashboard-card img {
@@ -461,8 +458,53 @@ h3 {
 }
 
 .dashboard-content p {
-  margin-bottom: 0;
+  margin-bottom: 14px;
   color: var(--muted);
+}
+
+.insight-list,
+.project-details {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.insight-list li::marker,
+.project-details li::marker {
+  color: var(--accent);
+}
+
+.project-details strong {
+  color: var(--ink);
+}
+
+.featured .project-details,
+.featured .project-details strong {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: auto;
+  padding: 10px 12px;
+  color: #fff;
+  background: var(--accent-dark);
+  border: 1px solid var(--accent-dark);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.featured .card-action {
+  color: var(--ink);
+  background: #fff;
+  border-color: #fff;
 }
 
 .project-grid {
@@ -474,7 +516,7 @@ h3 {
 
 .project-card {
   display: flex;
-  min-height: 320px;
+  min-height: 420px;
   flex-direction: column;
   padding: 22px;
 }
@@ -501,8 +543,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: auto 0 0;
-  padding: 24px 0 0;
+  margin: 0;
+  padding: 6px 0 18px;
   list-style: none;
 }
 
@@ -510,45 +552,6 @@ h3 {
   color: #fff;
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.18);
-}
-
-.tableau-card {
-  background: #eef6f4;
-}
-
-.viz-bars {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: end;
-  gap: 9px;
-  height: 100px;
-  margin-top: auto;
-  padding-top: 26px;
-}
-
-.viz-bars span:nth-child(1) {
-  height: 45%;
-  background: var(--blue);
-}
-
-.viz-bars span:nth-child(2) {
-  height: 78%;
-  background: var(--accent);
-}
-
-.viz-bars span:nth-child(3) {
-  height: 62%;
-  background: var(--gold);
-}
-
-.viz-bars span:nth-child(4) {
-  height: 92%;
-  background: var(--rose);
-}
-
-.viz-bars span:nth-child(5) {
-  height: 55%;
-  background: #3f7756;
 }
 
 .skills-section {
@@ -672,10 +675,6 @@ h3 {
   .skills-grid,
   .profile-link-grid {
     grid-template-columns: 1fr;
-  }
-
-  .dashboard-card-large {
-    grid-column: span 1;
   }
 
   .project-card.featured {
