@@ -148,8 +148,8 @@ p {
 h1 {
   max-width: 780px;
   margin-bottom: 22px;
-  font-size: clamp(2.35rem, 4.6vw, 4.05rem);
-  line-height: 1.04;
+  font-size: clamp(1.95rem, 3vw, 2.7rem);
+  line-height: 1.14;
   letter-spacing: 0;
 }
 
@@ -766,7 +766,7 @@ h3 {
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 1.95rem;
   }
 
   .metric-grid {
